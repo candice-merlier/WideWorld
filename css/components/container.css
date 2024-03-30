@@ -1,0 +1,47 @@
+/* Ensure flex display for destination items */
+.destination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; /* spacing between cards */
+}
+
+/* Style for each destination item */
+.destination-item {
+    flex: 0 0 calc(20% - 10px); /* Adjusted width for each card */
+    padding: 20px;
+    border: none; /* Remove border */
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
+    color: #000; /* Text color */
+    transition: transform 0.3s; /* Transition for hover effect */
+}
+
+/* Image styling */
+.destination-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Heading styling */
+.destination-item h3 {
+    margin-bottom: 10px;
+    color: #222831;
+}
+
+/* Paragraph styling */
+.destination-item p {
+    margin-bottom: 20px;
+    color: #222831;
+}
+
+/* Remove underline for anchor tags */
+.destination-item a {
+    text-decoration: none; /* Remove underline */
+}
+
+/* Hover effect */
+.destination-item:hover {
+    transform: translateY(-5px); /* Raise the card on hover */
+}
